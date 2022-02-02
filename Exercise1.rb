@@ -1,6 +1,6 @@
 def hashoccur(inputString)
     x=Hash.new(0)
-    input.split("").each do |i|
+    inputString.split("").each do |i|
         if i.match?(/[A-Za-z]/)
         x[i]=x[i]+1
         end
