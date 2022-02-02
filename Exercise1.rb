@@ -10,3 +10,4 @@ end
 print "Enter the input String:"
 inputString = gets.chomp
 hashoccur(inputString)
+puts "Hello"
