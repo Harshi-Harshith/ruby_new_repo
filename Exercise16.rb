@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 print 'Enter the input string: '
 inputString = gets.chomp
 print 'Enter the string which has to be searched in the input string: '
