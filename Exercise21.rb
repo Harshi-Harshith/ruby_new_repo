@@ -35,8 +35,8 @@ class NegativeInput < StandardError
 end
 
 print 'Enter the number whose factorial you want to find: '
+num = gets.chomp.to_i
 # input1 = gets.chomp.to_i
 # puts "#{input1.fact}"
-num = gets.chomp.to_i
 input1 = FactorialProgram.new(num)
 puts input1
