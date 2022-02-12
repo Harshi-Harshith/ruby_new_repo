@@ -20,10 +20,10 @@ end
 if arr.length.zero?
   print 'Please provide an input'
 else
-  # arr = reverseIterate(arr)
-  # arr.each do |i|
-  #    print "#{i} "
-  # end
+  arr = reverseIterate(arr)
+  arr.each do |i|
+    print "#{i} "
+  end
 end
 
 # print "#{reverse(arr)}"
