@@ -1,23 +1,28 @@
-print "Enter the input String: "
+# frozen_string_literal: true
+
+print 'Enter the input String: '
 inputString = gets.chomp
 array = []
-inputString.split(" ").each do |i|
-    array << i
+inputString.split(' ').each do |i|
+  array << i
 end
 
-output=Hash.new
-array.inject(output) { |h,p| h[p.length] ||=[]; h[p.length]<<p; h }
+output = {}
+array.each_with_object(output) do |p, h|
+  h[p.length] ||= []
+  h[p.length] << p
+end
 
-finalOutput = Hash.new
+finalOutput = {}
 
 output.each do |key, value|
-    if key%2==0
-        finalOutput['even'] ||= []
-        finalOutput['even'].push(value)
-    else
-        finalOutput['odd'] ||=[]
-        finalOutput['odd'].push(value)
-    end
+  if key.even?
+    finalOutput['even'] ||= []
+    finalOutput['even'].push(value)
+  else
+    finalOutput['odd'] ||= []
+    finalOutput['odd'].push(value)
+  end
 end
 
 puts finalOutput
