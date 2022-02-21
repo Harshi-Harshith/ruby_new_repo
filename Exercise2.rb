@@ -1,4 +1,6 @@
-puts "Enter your input: "
+# frozen_string_literal: true
+
+puts 'Enter your input: '
 inputstring = gets
-inputstring = inputstring.gsub(/a|e|i|o|u|A|E|I|O|U/,'*')
+inputstring = inputstring.gsub(/a|e|i|o|u|A|E|I|O|U/, '*')
 print inputstring
