@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # Without using time class
+# Tried removing instance variables, but getting error.
 
 require 'Time'
 
