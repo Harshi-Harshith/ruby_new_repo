@@ -1,16 +1,17 @@
-#puts "That\'s it"
-#puts 'Printing backslash "\\". This is how we print backslash'
+# frozen_string_literal: true
 
-print "Enter the input String: "
+# puts "That\'s it"
+# puts 'Printing backslash "\\". This is how we print backslash'
+
+print 'Enter the input String: '
 inputString = gets.chomp
-array = []
-inputString.split(" ").each do |i|
-    array << i
+array = inputString.split(' ')
+
+output = {}
+
+array.each_with_object(output) do |p, h|
+  h[p.length] ||= []
+  h[p.length] << p
 end
 
-output = Hash.new
-
-array.inject(output) { |h,p|  h[p.length] ||= []; h[p.length] << p;h }
-
 p output.sort.to_h
-#Yet to Complete
