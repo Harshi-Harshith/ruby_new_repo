@@ -1,13 +1,13 @@
+# frozen_string_literal: true
+
 def hashoccur(inputString)
-    x=Hash.new(0)
-    inputString.split("").each do |i|
-        if i.match?(/[A-Za-z]/)
-        x[i]=x[i]+1
-        end
-    end
-    print x
+  # x = Hash.new(0)
+  # inputString.split('').each do |i|
+  #  x[i] = x[i] + 1
+  # end
+  # print x
+  inputString.split('').group_by { |c| c }.transform_values(&:count)
 end
-print "Enter the input String:"
+print 'Enter the input String:'
 inputString = gets.chomp
-hashoccur(inputString)
-puts "Hello"
+p hashoccur(inputString)
