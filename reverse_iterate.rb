@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-def reverseIterate(array)
+def reverse_Iterate(array)
   if array.length < 2
     array
   else
     n = array.length
-    reverseIterate(array[(n / 2)..(n - 1)]) + reverseIterate(array[0..((n / 2) - 1)])
+    reverse_Iterate(array[(n / 2)..(n - 1)]) + reverse_Iterate(array[0..((n / 2) - 1)])
   end
 end
 arr = []
@@ -20,11 +20,11 @@ end
 if arr.length.zero?
   print 'Please provide an input'
 else
-  arr = reverseIterate(arr)
+  arr = reverse_Iterate(arr)
   arr.each do |i|
     print "#{i} "
   end
 end
 
 # print "#{reverse(arr)}"
-# arr = arr.reverseIterate{ |i| print "#{i} "}
+# arr = arr.reverse_Iterate{ |i| print "#{i} "}
