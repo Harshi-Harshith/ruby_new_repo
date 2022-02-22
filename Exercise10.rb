@@ -1,9 +1,6 @@
 print "Enter the input String: "
 inputString = gets.chomp
-array = []
-inputString.split(" ").each do |i|
-    array << i
-end
+array = inputString.split(" ")
 
 output=Hash.new
 array.inject(output) { |h,p| h[p.length] ||=[]; h[p.length]<<p; h }
