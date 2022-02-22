@@ -7,9 +7,9 @@ special = 0
 print 'Enter the input String: '
 inputString = gets.chomp
 inputString.each_char do |letter|
-  if (letter >= 'a') && (letter <= 'z')
+  if ('a'..'z').include? letter
     lowercase += 1
-  elsif (letter >= 'A') && (letter <= 'Z')
+  elsif ('A'..'z').include? letter
     uppercase += 1
   elsif letter == ' '
     special += 1
