@@ -2,6 +2,7 @@
 
 print 'Provide the string to be reversed: '
 inputString = gets.chomp
+
 if inputString.empty?
   print 'Please provide an input'
 else

@@ -26,6 +26,7 @@ while addItem == 'y'
   print 'Do you want to add more itens to your list(y/n): '
   addItem = gets.chomp
 end
+
 p itemscost
 print 'Total Cost: '
 print itemscost.inject(0) { |total, individual| total += individual[1] }

@@ -13,6 +13,7 @@ end
 employees = employees.sort_by { |_h, k| k }.to_h
 # employees.sort.map
 
+
 File.open('23.txt', 'w') do |i|
   employees.each do |h, v|
     if v.count > 1

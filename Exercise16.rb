@@ -9,4 +9,5 @@ comfullcap = comword.upcase
 inputString = inputString.gsub(/#{comword}/, "(#{comword})")
 inputString = inputString.gsub(/#{comcap}/, "(#{comcap})")
 inputString = inputString.gsub(/#{comfullcap}/, "(#{comfullcap})")
+
 puts "#{inputString} Total Occurences found: #{inputString.count('(')}"

@@ -17,6 +17,7 @@ while len.positive?
   len -= 1
 end
 
+
 if arr.length.zero?
   print 'Please provide an input'
 else

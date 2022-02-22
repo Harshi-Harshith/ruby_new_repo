@@ -13,6 +13,7 @@ def fact(input)
   answer
 end
 
+
 print 'Enter the number whose factorial you want to find: '
 input = gets.chomp.to_i
 puts fact(input)

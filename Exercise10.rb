@@ -7,6 +7,7 @@ array.inject(output) { |h,p| h[p.length] ||=[]; h[p.length]<<p; h }
 
 finalOutput = Hash.new
 
+
 output.each do |key, value|
     if key%2==0
         finalOutput['even'] ||= []

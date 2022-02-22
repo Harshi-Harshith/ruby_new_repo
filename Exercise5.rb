@@ -28,6 +28,7 @@ class Account
   end
 end
 
+
 customer_one = Account.new('C1', 30_000)
 customer_two = Account.new('C2', 10_000)
 customer_one.transfer(customer_one, customer_two, 15_000)

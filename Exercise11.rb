@@ -14,6 +14,7 @@ def pascal(n)
   end
 end
 
+
 print "Upto which number you want to print in the Pascal's triangle: "
 lines = gets.chomp.to_i
 

@@ -16,6 +16,7 @@ def check_Prime(n)
   p arr
 end
 
+
 print 'Enter the number upto which you want to print the prime numbers: '
 input = gets.chomp.to_i
 check_Prime(input)

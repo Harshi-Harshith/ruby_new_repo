@@ -33,5 +33,6 @@ class Bike < Vehicle
   end
 end
 
+
 bike1 = Bike.new('BajajDiscover', 58_000, 'BaggaLink', 12)
 puts bike1

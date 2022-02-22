@@ -13,6 +13,7 @@ def power(inputArray, pow)
   print outputArray
 end
 
+
 print 'Enter the number of elements you want in the array: '
 size = gets.chomp.to_i
 inputArray = []

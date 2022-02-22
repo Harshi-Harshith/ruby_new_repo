@@ -19,5 +19,6 @@ class Interest
   end
 end
 
+
 obj = Interest.new(15_000, 2.5, 0.1)
 puts obj

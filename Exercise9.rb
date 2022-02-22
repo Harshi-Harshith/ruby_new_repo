@@ -8,7 +8,6 @@ inputString = gets.chomp
 array = inputString.split(' ')
 
 output = {}
-
 array.each_with_object(output) do |p, h|
   h[p.length] ||= []
   h[p.length] << p

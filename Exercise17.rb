@@ -47,6 +47,7 @@ end
 class WrongSecondFormat < StandardError
 end
 
+
 print 'Enter hour1: '
 h1 = gets.chomp.to_i
 print 'Enter minute1: '

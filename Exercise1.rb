@@ -8,6 +8,7 @@ def hashoccur(inputString)
   # print x
   inputString.split('').group_by { |c| c }.transform_values(&:count)
 end
+
 print 'Enter the input String:'
 inputString = gets.chomp
 p hashoccur(inputString)

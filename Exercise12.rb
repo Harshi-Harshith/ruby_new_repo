@@ -4,6 +4,7 @@ lowercase = 0
 uppercase = 0
 numerical = 0
 special = 0
+
 print 'Enter the input String: '
 inputString = gets.chomp
 inputString.each_char do |letter|

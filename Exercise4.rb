@@ -11,6 +11,7 @@ class String
   end
 end
 
+
 print 'Enter the input String: '
 str = gets.chomp
 if str.checkPalindrome?(str).to_s == 'true'

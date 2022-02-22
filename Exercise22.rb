@@ -27,6 +27,7 @@ end
 class NotCapital < StandardError
 end
 
+
 print 'Enter the firstname: '
 firstn = gets.chomp.to_s
 print 'Enter the lastname: '

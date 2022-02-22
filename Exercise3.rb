@@ -11,4 +11,5 @@ end
 
 print "Enter the number of fibonacci series' terms you want to print: "
 fib = gets.chomp.to_i
+
 fibonacci(fib) { |i| puts i }
