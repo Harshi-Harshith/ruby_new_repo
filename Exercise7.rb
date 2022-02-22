@@ -1,21 +1,10 @@
-=begin
-inputString = get.chomp
-def to_s
-    inputString.split("").each do |i|
-        i.swapcase
-=end
+# frozen_string_literal: true
 
-class Exercise7
-    attr_accessor :inputString
-
-    def initialize(inputString)
-        @inputString = inputString
-    end
-
-    def to_s
-        "#{@inputString.swapcase}"
-    end
+class String
+  def to_s
+    Self.swapcase
+  end
 end
 
-input1 = Exercise7.new(gets.chomp)
-puts input1
+input1 = gets.chomp
+puts input1.swapcase
